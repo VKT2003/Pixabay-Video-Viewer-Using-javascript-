@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-1Q2LWjY_VRN5YkiznUQYSshoDLqgcUwd8JH78OR0rgzE48896dtr2A&s=10");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: auto;
+}
+
+.container {
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcST-1Q2LWjY_VRN5YkiznUQYSshoDLqgcUwd8JH78OR0rgzE48896dtr2A&s=10");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 80%; /* Adjust width as needed */
+    max-width: 800px; /* Set a max-width for responsiveness */
+    text-align: center;
+    margin:auto;
+    margin-top:30px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color:white;
+}
+
+.video-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.video-item {
+    cursor: pointer;
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.video-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.video-item:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+.video-container {
+    margin-top: 20px;
+    max-width: 100%; /* Ensure video container respects parent width */
+}
+
+.video-container video {
+    width: 100%; /* Ensure video fills its container */
+    max-width: 100%; /* Ensure video does not exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
